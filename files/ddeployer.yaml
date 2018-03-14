@@ -1,0 +1,9 @@
+keys:
+  private_key: /Users/leonardo.damasceno/Documents/Ruby/backup/lib/private.pem
+  public_key: /Users/leonardo.damasceno/Documents/Ruby/backup/lib/public.pem
+
+config:
+  docker_image_name: mynginx
+  docker_url: https://registry-1.docker.io/v2/
+  docker_login: damascenorakuten
+  docker_password: AI120dPGF8Vk7MXcVb5vgCRRHSQH3gq4GAFv7qpOgejQl5waqZC0h2cR7rCT37c+Ht7MXbgD+pq4+ieoQl/mVx8PdpvBfd2Rk2c2PkJREZ1QKz5u1uHa/KIFI4yBvJk/KTWGIWOd8ibpOM3g9iUEPK7wnkcDLVwJ5VvcOOZhnnLzY8HwvIclEbtsKnHrGZDNvUQCzCKk0sXHEiZi8zkhtMBFgoDC+qZ1sUW8E6x2h9UpCZUnU03yRgu6yxRoe/w1pdeS1dhow3aWmlba40kaHxNF32znTzN0m8LbuEgezv4q5UPxgp4oSLcsiEMgtLGzN5sYAX3bppkwsAqCPD1UEQ==
