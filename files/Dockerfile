@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Leonardo Damasceno
+LABEL maintainer Leonardo Damasceno
 
 RUN apt-get update \
     && apt-get install -y nginx \
