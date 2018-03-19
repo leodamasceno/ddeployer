@@ -1,7 +1,8 @@
 
 # ddeployer
 
-Ruby application to deploy and run your code locally via Docker
+Ruby application to deploy and run your code locally via Docker. This
+application gets and manage images of Docker's registry.
 
 ## Dependencies
 
@@ -57,7 +58,10 @@ and ddeployer.yaml. Check the examples below:
       docker_login: leodamasceno
       docker_password: C2120dPGF8Vk7MXcVb5vgCRRHSQH3gq4GAFv7lpOgejQl5waqZC0hXcR7rCT37c+Ht7MXbgD+pq4+ieoRl/mVx8PdpvBfd2Rk2c2PkJREZ1QKz5u1uHa/KIFI4yBvJk/KTWGIWOd8ibpOM3g9iUEPK7wnkcDLVwJ5VvcOOZhnnLzY8HwvIclEbtsKnHrGZDNvUQCzCKk0sXHEiZi8zkhtMBFgoDC+qZ1sUW8E6x2h8BpCZUnU03yRgu6yxXoe/w1pdeS5dhow3aWmlbay0kaHxNF32znTzN0m8LbuEgezv4q7DPxgp4oSLcsiEJytLGzN5sYAX3bypkwsGqCPD1UEE==
 
-The Dockerfile:
+In this above configuration file has the credentials of Docker's registry,
+a.k.a. Docker Hub,
+
+The Dockerfile, has the deploy commands for development environment, modify by your necessity:
 
     FROM ubuntu:16.04
     MAINTAINER Leonardo Damasceno
