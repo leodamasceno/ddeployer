@@ -2,7 +2,7 @@
 # ddeployer
 
 Ruby application to deploy and run your code locally via Docker. This
-application gets and manage images and credentials of Docker's registry.
+application retrieves and manages images and credentials from the Docker registry.
 
 ## Dependencies
 
