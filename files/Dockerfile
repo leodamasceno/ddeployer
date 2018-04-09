@@ -1,12 +1,12 @@
 FROM ubuntu:16.04
 
-MAINTAINER Leonardo Damasceno
+LABEL maintainer Leonardo Damasceno
 
-RUN apt-get update \
-    && apt-get install -y nginx \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
-    && echo "daemon off;" >> /etc/nginx/nginx.conf
+RUN apt-get update
+RUN apt-get install -y nginx
+RUN apt-get clean
+RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 COPY . /var/www/html
 
