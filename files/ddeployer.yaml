@@ -5,5 +5,8 @@ keys:
 config:
   docker_image_name: mynginx
   docker_url: https://registry-1.docker.io/v2/
-  docker_login: damascenorakuten
+  docker_login: damasceno
   docker_password: AI120dPGF8Vk7MXcVb5vgCRRHSQH3gq4GAFv7qpOgejQl5waqZC0h2cR7rCT37c+Ht7MXbgD+pq4+ieoQl/mVx8PdpvBfd2Rk2c2PkJREZ1QKz5u1uHa/KIFI4yBvJk/KTWGIWOd8ibpOM3g9iUEPK7wnkcDLVwJ5VvcOOZhnnLzY8HwvIclEbtsKnHrGZDNvUQCzCKk0sXHEiZi8zkhtMBFgoDC+qZ1sUW8E6x2h9UpCZUnU03yRgu6yxRoe/w1pdeS1dhow3aWmlba40kaHxNF32znTzN0m8LbuEgezv4q5UPxgp4oSLcsiEMgtLGzN5sYAX3bppkwsAqCPD1UEQ==
+  jenkins_url: http://prod-jenkins.example.com:8080
+  jenkins_job_name: test
+  jenkins_job_token: j2KDPR/sxsN/A9Rzaxj1wabt0RQ2J5QZL0vTVkHoj8wesRcq5CbjYDJGKvv9duT9jDS79nPj/g23iINe7CPH4VBfJC6JboAtZp7/D2cXm+vxY+CgHJuv5yHBxROrIWF5H/YIuANEsBn4tGBZFkaAWMLsMeQT59najyUAh15fJX+d5OC/NI/dtM4czfBFloelGsC0fu7Pq7iMvClR5apdVfYG+YV6ZNVxbJw6Yejq8iqXPsnfgNEPCXY+49Yohoy8Qx2ix5es/vAQWSmWGtkkPwPS1P8JgY3xlSOVPmXVkqRYOlNfM1Tnc6CVr9YJvQZHT69xJlCt5sf93Ku1oTEgRQ==
