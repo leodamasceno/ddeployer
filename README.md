@@ -103,6 +103,11 @@ You will need to disable the CSRF security option:
 Then, install the *Build Authorization Token Root* plugin:
 **Manage Jenkins > Manage Plugins > Available tab > Build Authorization Token Root Plugin**
 
+Configure the job to use an authentication token by selecting:
+**Trigger builds remotely**
+
+And define a token for the project.
+
 ## Executing the application
 
 The application can be used to create and store backups but you can also encrypt
