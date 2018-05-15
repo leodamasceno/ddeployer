@@ -64,8 +64,11 @@ keys:
 config:
     docker_image_name: prod-nginx
     docker_url: https://registry-1.docker.io/v2/
-    docker_login: leodamasceno
+    docker_login: damasceno
     docker_password: C2120dPGF8Vk7MXcVb5vgCRRHSQH3gq4GAFv7lpOgejQl5waqZC0hXcR7rCT37c+Ht7MXbgD+pq4+ieoRl/mVx8PdpvBfd2Rk2c2PkJREZ1QKz5u1uHa/KIFI4yBvJk/KTWGIWOd8ibpOM3g9iUEPK7wnkcDLVwJ5VvcOOZhnnLzY8HwvIclEbtsKnHrGZDNvUQCzCKk0sXHEiZi8zkhtMBFgoDC+qZ1sUW8E6x2h8BpCZUnU03yRgu6yxXoe/w1pdeS5dhow3aWmlbay0kaHxNF32znTzN0m8LbuEgezv4q7DPxgp4oSLcsiEJytLGzN5sYAX3bypkwsGqCPD1UEE==
+    jenkins_url: http://prod-jenkins.example.com:8080
+    jenkins_job_name: test
+    jenkins_job_token: j2KDPR/sxsN/A9Rzaxj1wabt0RQ2J5QZL0vTVkHoj8wesRcq5CbjYDJGKvv9duT9jDS79nPj/g23iINe7CPH4VBfJC6JboAtZp7/D2cXm+vxY+CgHJuv5yHBxROrIWF5H/YIuANEsBn4tGBZFkaAWMLsMeQT59najyUAh15fJX+d5OC/NI/dtM4czfBFloelGsC0fu7Pq7iMvClR5apdVfYG+YV6ZNVxbJw6Yejq8iqXPsnfgNEPCXY+49Yohoy8Qx2ix5es/vAQWSmWGtkkPwPS1P8JgY3xlSOVPmXVkqRYOlNfM1Tnc6CVr9YJvQZHT69xJlCt5sf93Ku1oTEgRQ==
 ```
 
 In this above configuration file has the credentials of Docker's registry,
@@ -91,6 +94,14 @@ CMD ["nginx"]
 
 The two files above need to be in the same directory where your code is for the
 ddeployer application to work.
+
+## Jenkins integration
+
+You will need to disable the CSRF security option:
+**Manage Jenkins > Configure Global Security > Prevent Cross Site Request Forgery exploits**
+
+Then, install the *Build Authorization Token Root* plugin:
+**Manage Jenkins > Manage Plugins > Available tab > Build Authorization Token Root Plugin**
 
 ## Executing the application
 
@@ -118,9 +129,21 @@ hello
 
 The string "hello" was returned by the application.
 
-Finally, you can run the application to deploy your code locally, you will have
+You can also run the application to deploy your code locally, you will have
 to specify a tag for the docker image:
 
 ```
 ruby ddeployer -t 0.1.1
+```
+
+It's also possible to trigger jobs via Jenkins, check the example below:
+
+```
+ruby ddeployer -r
+```
+
+And for parameterized projects:
+
+```
+ruby ddeployer -r -p environment=prod;role=test
 ```
